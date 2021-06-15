@@ -9,3 +9,7 @@ O que eu vou aprender na Trybe:
 - HTML
 
 - CSS
+
+- REACT
+
+- JS
