@@ -14,7 +14,7 @@ h2 {
 h3 { 
     color: rgb(0, 183, 255);
     text-align: center;
-    padding:60px 0px 30px 0px
+    padding:60px 0px 0px 40px
     }
 h4 { 
     color: orange;
@@ -43,6 +43,7 @@ body {
     font-weight: bold; 
     font-style: italic;
     line-height: 40px;
+    color: yellowgreen;
     }
 
 .image1 {
@@ -59,7 +60,7 @@ body {
 
 }
 .button {
-     color: yellowgreen;
+     
      line-height: 100px;
      font-size: 30px;
      text-decoration:none;
