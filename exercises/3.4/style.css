@@ -14,6 +14,7 @@ h2 {
 h3 { 
     color: rgb(0, 183, 255);
     text-align: center;
+    padding:60px 0px 30px 0px
     }
 h4 { 
     color: orange;
@@ -36,7 +37,8 @@ body {
 }
 
 .estilo-lista {
-    padding: 70px;
+    padding: 0px 80px 90px 90px;
+    text-align: center;
     color:white;  
     font-weight: bold; 
     font-style: italic;
