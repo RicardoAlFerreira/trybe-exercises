@@ -51,13 +51,32 @@ for (let index = 0; index < numbers.length; index += 1) {
  console.log(maior);
 
  //exercicio 6
- let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let resultado = 0;
  for (let index = 0; index < numbers.length; index += 1) {
-     if (numbers[index] % 2 === 0) {
-        console.log("Par");
-     } else {
-         console.log("Ímpar")
-     }
+     if (numbers[index] % 2 !== 0) {
+         resultado += 1;
+    } 
 }
+if (resultado === 0 ){
+    console.log ('Nenhum valor ímpar encontrado')
+
+} else {
+    console.log(resultado);
+}
+
+//exercício 7
+ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+ let menor = Math.min.apply(null, numbers);
+ console.log(menor);
+ //ou
+ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+ let menor = [0];
+ for (let index = 0; index < numbers.length; index += 1) {
+     if (numbers[index] < menor) {
+         menor = numbers[index];
+     }
+ }
+ console.log(menor);
   
 
