@@ -34,4 +34,23 @@ for (let index = 0; index < fruits.length; index += 1) {
      console.log(inputline);
  
  }
- 
+
+ //Exercicio 3
+ let n = 5;
+ let simbolo = '*';
+ let inputline = '';
+let baseTriangulo = n;
+
+ for(let indexLinha = 0; indexLinha <= n; indexLinha += 1){
+     for(let indexColuna = 0; indexColuna <= n; indexColuna +=1 ){
+         if(indexColuna < baseTriangulo) {
+          inputline = inputline + ' ';
+         } else {
+             inputline = inputline + simbolo;
+         }
+     }
+    console.log(inputline);
+    inputline = '';
+    baseTriangulo -= 1
+
+}
