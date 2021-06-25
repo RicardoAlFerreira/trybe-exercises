@@ -23,4 +23,15 @@ for (let index = 0; index < fruits.length; index += 1) {
      console.log(inputline);
  
  }
+
+ //Exercicio 2
+ let n = 5;
+ let triangulo = '*';
+ let inputline = '';
+
+ for(let index = 0; index <= n; index += 1){
+     inputline = inputline + triangulo;
+     console.log(inputline);
+ 
+ }
  
