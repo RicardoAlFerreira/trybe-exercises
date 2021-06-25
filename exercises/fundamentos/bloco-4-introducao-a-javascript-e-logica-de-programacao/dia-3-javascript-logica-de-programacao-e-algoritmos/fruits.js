@@ -54,3 +54,26 @@ let baseTriangulo = n;
     baseTriangulo -= 1
 
 }
+
+//Exercicio 4
+let n = 5;
+let simbolo = '*';
+let inputline = '';
+let meioDoTriangulo = (n + 1)/ 2;
+let ladoEsquerdo = meioDoTriangulo;
+let ladoDireito = meioDoTriangulo;
+
+ for(let indexLinha = 0; indexLinha <= meioDoTriangulo; indexLinha += 1){
+     for(let indexColuna = 0; indexColuna <= n; indexColuna +=1 ){
+         if(indexColuna > ladoEsquerdo && indexColuna < ladoDireito) {
+          inputline = inputline + simbolo;
+         } else {
+             inputline = inputline + ' ';
+         }
+     }
+    console.log(inputline);
+    inputline = '';
+    ladoDireito += 1;
+    ladoEsquerdo -= 1;
+
+}
