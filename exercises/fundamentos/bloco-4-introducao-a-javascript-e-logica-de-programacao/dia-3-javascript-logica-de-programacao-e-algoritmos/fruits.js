@@ -98,7 +98,7 @@ for (let line = 1; line <= middle; line += 1) {
   console.log(outputLine);
 }
 
-//Pra conferir se um numero é primo ou não!!! (Não fui eu quem fez!!)
+//Pra conferir se um numero é primo ou não!!! (Não fui eu quem fez!!Desconsiderar)
 
 let divisors = 1;
 let numberToCheck = 30;
