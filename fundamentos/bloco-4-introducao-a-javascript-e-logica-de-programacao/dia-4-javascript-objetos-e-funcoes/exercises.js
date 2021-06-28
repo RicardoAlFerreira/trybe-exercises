@@ -106,3 +106,26 @@ function indiceDoMaior(numeros) {
   }
   
   console.log(indiceDoMaior([2, 30, 6, 7, -2, 21]));
+
+//Exercício 4 (Qual palavra possui maior quantidade de caracteres?)
+function maiorNome(palavras) {
+  let maiorPalavra = palavras[0];
+  for (let indice in palavras) {
+    if (maiorPalavra.length < palavras[indice].length) {
+      maiorPalavra = palavras[indice];
+    }
+  }
+  return maiorPalavra;
+}
+
+console.log(maiorNome(['José', 'Lucas', 'Ricardo', 'Bruno', 'Cairo', 'Joana']));
+
+//Exercício 6 (Somatório de todos os numeros) no caso resposta 210
+function somatorio(numeros) {
+  let total = 0;
+  for (let index = 1; index <= numeros; index += 1) {
+    total = total + index;
+  }
+  return total;
+}
+console.log(somatorio(20));
