@@ -57,3 +57,52 @@ for (let propriedades in info) {
         console.log(info[propriedades], 'e', info2[propriedades]);
     }
 }
+
+// Exercicio 1 Funções (Função que determina se uma palavra no array é um Palindromo contabilizando se ela se escreve igual de traz pra frente)
+
+function verificaPalindrome(word){
+  for(index in word){
+    if(word[index] != word[(word.length - 1) - index]){
+      return false;
+    }
+  }
+        return true;
+}
+function verificaPalindrome(string) {
+  let reverse = string.split('').reverse().join('');
+  if (reverse === string) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(verificaPalindrome('arara'));
+console.log(verificaPalindrome('desenvolvimento'));
+
+
+
+//Exercicio 2 Qual indice possui maior valor? no caso indice 1
+function indiceDoMaior(numeros) {
+  let maiorNumero = 0;
+  for (let indice in numeros) {
+    if (numeros[maiorNumero] < numeros[indice]) {
+      maiorNumero = indice;
+    }
+  }
+  return maiorNumero;
+}
+
+console.log(indiceDoMaior([2, 30, 6, 7, 10, 21]));
+
+//Exercicio 3 Qual o indice possui menor valor?
+function indiceDoMaior(numeros) {
+    let maiorNumero = 0;
+    for (let indice in numeros) {
+      if (numeros[maiorNumero] > numeros[indice]) {
+        maiorNumero = indice;
+      }
+    }
+    return maiorNumero;
+  }
+  
+  console.log(indiceDoMaior([2, 30, 6, 7, -2, 21]));
