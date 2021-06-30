@@ -129,3 +129,5 @@ function somatorio(numeros) {
   return total;
 }
 console.log(somatorio(20));
+
+
